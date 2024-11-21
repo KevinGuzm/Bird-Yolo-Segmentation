@@ -1,0 +1,6 @@
+path: /content/drive/MyDrive/YOLO/YOLO
+train: images/train 
+val: images/val  
+
+names:
+    0: bird
