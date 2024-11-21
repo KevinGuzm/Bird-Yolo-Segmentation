@@ -1,0 +1,42 @@
+// schema //
+tree --filelimit 10
+
+/Users/data
+.
+├── images
+│   ├── train  [700 entries exceeds filelimit, not opening dir]
+│   └── val  [300 entries exceeds filelimit, not opening dir]
+└── labels
+    ├── train  [700 entries exceeds filelimit, not opening dir]
+    └── val  [300 entries exceeds filelimit, not opening dir]
+
+
+// files examples for segmnetation //
+
+/Users/data/images/train
+  002393688aebc335.jpg
+  00296cddcbc1abbf.jpg
+  ...
+
+/Users/data/images/val
+  003bc6ffe8d4bb4e.jpg
+  003d95e6cd092860.jpg
+  ...
+
+/Users/data/labels/train
+  002393688aebc335.txt
+  00296cddcbc1abbf.txt
+  ...
+  
+/Users/data/labels/val
+  002393688aebc335.txt
+  00296cddcbc1abbf.txt
+  ...
+
+// labels format //
+
+/Users/data/labels/train/002393688aebc335.txt
+  0 0.475625 0.15273037542662116 0.475 0.15358361774744028 0.475 0.15443686006825938 0.47375 0.1561433447098976 ...
+
+/Users/data/labels/train/00296cddcbc1abbf.txt
+  0 0.545625 0.14083333333333334 0.54125 0.14666666666666667 0.53875 0.14666666666666667 0.538125 0.1475 0.538125 ...
